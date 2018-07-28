@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML form exercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+      body{
+        background-color: LightGray;
+        padding: 10px;
+      }
+      #heading{
+        text-align: center;
+      }
+      #form-container h4{
+        margin-bottom: 2px;
+      }
+      #comment-box{
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+      input {
+        border-radius: 0px;
+      }
+
+      .yellow-input-box{
+        background-color: #F0E68C;
+      }
+      .fixed-inputs{
+        margin: 2px;
+      }
+      #first_fields label{
+        display: inline-block;
+        float: left;
+        clear: left;
+        min-width: 130px;
+        text-align: left;
+      }
+      #first_fields input {
+        display: inline-block;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">HTML form exercise</h1> 
+    <p><span style="color:red;">Please note: </span>This Example demonstrate how HTML forms cab be used. Submit button should submit the button and reset button should rest the form(revert the changes in form fields). The form layout should be the same as below.</p>
+    <div id="form-container">
+      <h4>Contact form</h4><br>
+      <form action="">
+        <div id="first_fields">
+          <label for="name">Your name*:</label>
+          <input type="text" name="name" class="fixed-inputs" required>
+          <br>
+          <label for="email">Email*:</label>
+          <input type="email" name="email" class="yellow-input-box fixed-inputs" required>
+          <br>
+          <label for="phone-number">Phone number:</label>
+          <input type="text" name="phone-number" class="yellow-input-box fixed-inputs">
+          <br>
+          <label for="website">Website*:</label>
+          <input type="url" name="website" value="http://" size="30" class="fixed-inputs" required><br>
+        </div>
+        <div id="comment-box">
+          <label for="comments">Comments*:</label><br>
+          <textarea name ="comments" rows="8" cols="40" required>
+          </textarea>
+        </div>
+        <h4>Text field</h4>
+        <label for="name-second">Your name:</label>
+        <input type="text" name="name-second" class="yellow-input-box">
+        <br>
+        <h4>Password field</h4>
+        <label for="password">Password:</label>
+        <input type="password" name="password">
+        <br>
+        <h4>Radio buttons</h4>
+        <label for="pizza">Do you like pizza?</label><br>
+          <input type="radio" name="pizza" value="yes" checked> Yes<br>
+          <input type="radio" name="pizza" value="no"> No<br>
+          <input type="radio" name="pizza" value="Maybe"> Maybe<br>
+          <input type="radio" name="pizza" value="never-tried"> Never tried<br>
+        <h4>Checkbox</h4>
+        <input type="checkbox" name="check1" value="check1"> Check this box if you like our service<br>
+        <h4>Text area</h4>
+        <label for="textarea">Anything you would like to say?</label><br>
+        <textarea name="textarea" rows="8" cols="60">
+        </textarea>
+        <h4>I Like</h4>
+         <select name="toppings" size="5" multiple style="margin-top: 20px">
+           <option value="mushrooms">mushrooms</option>
+           <option value="green peepers">green peepers</option>
+           <option value="onions">onions</option>
+           <option value="tomatoes">tomatoes</option>
+           <option value="olives">olives</option>
+         </select><br>
+        <h4>Menu</h4>
+        <label for="colors">Your favorite color:</label><br>
+        <select name="colors">
+          <option value="red">red</option>
+          <option value="green">green</option>
+          <option value="blue">blue</option>
+        </select><br>
+        <h4>Attach file</h4>
+        <input type="text" name="file" size="30">
+        <input type="file" name="file_button"><br>
+        <h4>Buttons</h4>
+        <input type="submit" value="Submit">
+        <input type="reset">
+      </form> 
+    </div>
+  </body>
+</html>
