@@ -1,0 +1,124 @@
+body{
+  margin-right: 0;
+  margin-left: 0;
+  font-family: tahoma;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 3px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-bottom: 2px solid #db2927;
+  font-size: 13px;
+  color: black
+}
+
+header a{
+  text-decoration: none;
+  color: #045198;
+}
+
+#header-links .header-links-label{
+  margin-left: 20px;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#heading-box{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#form-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 600px;
+  flex-direction: column;
+  background-color: #ececec;
+  border: 2px solid #b9b9b9;
+  padding: 20px;
+  padding-left: 10px;
+  font-size: 13px;
+  color: #6f6f6f;
+}
+
+.label-and-input{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 5px;
+  width: 90%;
+}
+
+.label-and-input label{
+  text-align: right;
+  font-family: tahoma;
+  font-size: 14px;
+  margin-right: 50px;
+  color: black;
+  line-height: 25px;
+}
+
+.label-and-input input[type="text"]{
+  background-color: white;
+  border-color: #b9b9b9;
+  width: 360px;
+  height: 25px;
+}
+
+.label-and-input input[type="password"]{
+  background-color: white;
+  border-color: #b9b9b9;
+  width: 360px;
+  height: 25px;
+}
+
+.label-and-input input[type="email"]{
+  background-color: white;
+  border-color: #b9b9b9;
+  width: 360px;
+  height: 25px;
+}
+
+.label-and-input #label-address{
+  align-self: flex-start;
+}
+
+.inputs-box{
+  width: 366px;
+}
+
+
+#submit-button{
+  background-color: #dc2927;
+  border-color: #a10200;
+  width: 130px;
+  height: 32px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  border-right: 0;
+}
+
+#form-heading{
+  font-size: 18px;
+  color: #2c286d;
+  margin-bottom: 2px;
+}
+
+#form-box select{
+  width: 110px;
+  font-size: 13px;
+  color: #6f6f6f;
+  background-color: white;
+}

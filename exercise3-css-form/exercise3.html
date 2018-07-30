@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Exercise 3</title>
+  	<link rel="stylesheet" type="text/css" href="exercise3.css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+    	<img src="vinsol-logo.png">
+    	<div id="header-links">
+        <span class="header-links-label">Email us at:</span>
+        <a href="#">sales@vinsol.com</a>
+        <span class="header-links-label">Skype:</span>
+        <a href="#">Vinsol</a>
+      </div>
+    </header>
+    <section>
+      <div id="heading-box">
+      <h3 id="form-heading">Please fill the form below</h3>
+        <form id="form-box">
+          <span class="label-and-input">
+            <label for="first_name">First name</label>
+            <input type="text" name="first_name" srequired>
+          </span>
+          <span class="label-and-input">
+            <label for="last_name">Last name</label>
+            <input type="text" name="last_name" required>
+          </span>
+          <span class="label-and-input">
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+          </span>
+          <span class="label-and-input">
+            <label for="password">Password</label>
+            <input type="password" name="password">
+          </span>
+          <span class="label-and-input">
+            <label for="gender">Gender</label>
+              <div class="inputs-box">
+                <input type="radio" name="gender" value="male" checked>Male
+                <input type="radio" name="gender" value="female">Female
+              </div>
+          </span>
+          <span class="label-and-input">
+            <label for="dob">Date of Birth</label><br>
+            <div class="inputs-box">
+              <select name="date">
+               <option value="DD">DD</option>
+              </select>
+              <select name="month">
+                <option value="MM">MM</option>
+              </select>
+              <select name="year">
+                <option value="YY" disabled hidden>YY</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+              </select>
+            </div>
+          </span>
+          <span class="label-and-input">
+            <label id="label-address" for="textarea">Address</label>
+             <textarea style="width: 360px;height: 135px;">
+            </textarea>
+          </span>
+          <span class="label-and-input">
+          <div class="inputs-box">
+            <input id="submit-button" type="submit" value="Submit Details">
+          </div>
+          </span>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
